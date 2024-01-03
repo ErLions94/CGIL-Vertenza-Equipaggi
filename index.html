@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>TRATTATIVA CCNL</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1">
+    </head>
+    <body>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="app.js"></script>
+        <style>
+            body {margin: 0px;}
+            .papero {font-size: 25px; padding-left: 20px; text-align: center;}
+            .papero1 {font-size: 25px; padding-left: 20px; text-align: center;}
+            .papero2 {font-size: 25px; padding-left: 20px; text-align: center;}
+            .papero3 {font-size: 25px; padding-left: 20px; text-align: center;}
+            .papero4 {font-size: 25px; padding-left: 20px; text-align: center;}
+            .papero5 {font-size: 25px; padding-left: 20px; text-align: center;}
+
+            @media (max-width: 1200px) {
+                .papero {font-size: 24px; padding-left: 20px; text-align: center;}
+            }
+            @media (max-width: 980px) {
+                .papero {font-size: 18px; padding-left: 15px; text-align: center;}
+            }
+            @media (max-width: 767px) {
+                .papero {font-size: 12px; padding-left: 10px; text-align: center;}
+            }
+            @media (max-width: 480px) {
+                .papero {font-size: 12px; padding-left: 5px; padding-right: 0px; text-align: center;}
+            }
+
+            .penna {max-height: 0; overflow: hidden; transition: all 1s cubic-bezier(.215, .61, .355, 1);}
+
+            .penna1 {max-height: 0; overflow: hidden; transition: all 1s cubic-bezier(.215, .61, .355, 1);}
+
+            .penna2 {max-height: 0; overflow: hidden; transition: all 1s cubic-bezier(.215, .61, .355, 1);}
+
+            .penna3 {max-height: 0; overflow: hidden; transition: all 1s cubic-bezier(.215, .61, .355, 1);}
+
+            .penna4 {max-height: 0; overflow: hidden; transition: all 1s cubic-bezier(.215, .61, .355, 1);}
+
+            .penna5 {max-height: 0; overflow: hidden; transition: all 1s cubic-bezier(.215, .61, .355, 1);}
+
+            .active {max-height: 2000px;}
+
+        </style>
+        <div class="domande">
+        <div class="papero">
+                <text class="toggle"><red><strong>Trasferimenti</strong></red></text>
+                <div class="penna">
+                    <text>A Civitavecchia</text>
+                </div>
+        </div>        
+        <div class="papero1">
+            <text class="toggle1"><red><strong>Tutti</strong></red></text>
+            <div class="penna1">
+                <text>Tranne Capuano</text>
+            </div>
+        </div>
+        <div class="papero2">
+            <text class="toggle2"><red><strong>Sei 32?</strong></red></text>
+            <div class="penna2">
+                <text>Manco se famo 3 CV!!</text>
+            </div>
+        </div>
+        <div class="papero3">
+            <text class="toggle3"><red><strong>Martina</strong></red></text>
+            <div class="penna3">
+                <text>CISL</text>
+            </div>
+        </div>
+        <div class="papero4">
+            <text class="toggle4"><red><strong>Mi sembra giusto</strong></red></text>
+            <div class="penna4">
+                <text>Viva le quote rosa</text>
+            </div>
+        </div>
+        <div class="papero5">
+            <text class="toggle5"><red><strong>Gandalf</strong></red></text>
+            <div class="penna5">
+                <text>Sta zitto!!.</text>
+            </div>
+        </div>
+        </div>
+        <script>
+            let item = document.querySelector('.toggle');
+            let penna = document.querySelector('.penna');
+            item.addEventListener("click", function() {
+                penna.classList.toggle('active');
+            });            
+        
+            let item1 = document.querySelector('.toggle1');
+            let penna1 = document.querySelector('.penna1');
+            item1.addEventListener("click", function() {
+                penna1.classList.toggle('active');
+            });
+        
+            let item2 = document.querySelector('.toggle2');
+            let penna2 = document.querySelector('.penna2');
+            item2.addEventListener("click", function() {
+                penna2.classList.toggle('active');
+            });
+        
+            let item3 = document.querySelector('.toggle3');
+            let penna3 = document.querySelector('.penna3');
+            item3.addEventListener("click", function() {
+                penna3.classList.toggle('active');
+            });
+        
+            let item4 = document.querySelector('.toggle4');
+            let penna4 = document.querySelector('.penna4');
+            item4.addEventListener("click", function() {
+                penna4.classList.toggle('active');
+            });
+        
+            let item5 = document.querySelector('.toggle5');
+            let penna5 = document.querySelector('.penna5');
+            item5.addEventListener("click", function() {
+                penna5.classList.toggle('active');
+            });
+        
+        </script>
+    </body>
+</html>
